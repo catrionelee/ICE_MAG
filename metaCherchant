@@ -11,7 +11,7 @@
         --bothdirs=TRUE \
         --chunklength=100 \
         -pf 5\
-        -m 50G \
+        -m 100G \
         -c
 
 
