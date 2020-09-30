@@ -6,8 +6,6 @@
 
 source activate nextflow
 
-nextflow run nf-core/mag -r dev --reads "./*_{1,2}.fastq.gz" \
--profile conda --max_memory 200.GB \
--c myconfig.conf --kraken2_db "ftp://ftp.ccb.jhu.edu/pub/data/kraken2_dbs/minikraken2_v2_8GB_201904_UPDATE.tgz" --cat_db "http://tbb.bio.uu.nl/bastiaan/CAT_prepare/CAT_prepare_20200618.tar.gz"
-
-
+nextflow run nf-core/mag -r dev -profile conda --reads './*_{1,2}.fastq.gz' --max_memory 200.GB -c myconfig.conf \
+--kraken2_db /isilon/lethbridge-rdc/users/ortegapoloro/kraken2db/minikraken2_v1_8GB_201904_UPDATE.tgz --cat_db /isilon/lethbridge-rdc/users/ortegapoloro/cat_db/CAT_prepare_20200618.tar.gz \
+--trimming-quality 20 --mean-quality 20 --email rodrigo.ortegapolo@canada.ca --plaintext_email --monochrome_logs -resume
