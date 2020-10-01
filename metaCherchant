@@ -4,7 +4,7 @@
         --k 31 \
         --coverage=5 \
         --reads /home/AAFC-AAC/leecat/catrione_metagenomics/SRR6512893_*{1,2}.fastq.gz \
-        --seq /home/AAFC-AAC?leecat/iceberg.fasta \
+        --seq /home/AAFC-AAC/leecat/iceberg.fasta \
         --output output \
         --work-dir workDir \
         --maxkmers=100000 \
