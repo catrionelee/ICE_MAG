@@ -27,6 +27,7 @@ Using **Kraken2** tool against the nucleotide data base to determine the taxonom
 ## 2. Metagenomic genome assembly pipeline
 
 Using **nf-core/mag** pipeline to assemble MAGs
+<https://github.com/catrionelee/ICE_MAG/blob/master/nf-core-mag>
 
 
 ## 3. Identifying ICEs and ARGs in MAGs
