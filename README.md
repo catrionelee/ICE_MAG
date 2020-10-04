@@ -62,4 +62,4 @@ Output generated all desired and expected outputs (2020-10-01) so will continue 
 
 Each metagenomic environment will be run separately so to easily compare. Soil was ran with 500 Gb of memory (2020-10-03). <https://https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/subset-soil>
 
-2020-10-04: 500 Gb not enough for the script, 1000 Gb not enough, cannot cluster allocate >2000 Gb of memory.
+2020-10-04: 500 Gb not enough for the script, 1000 Gb not enough, cannot cluster allocate >2000 Gb of memory. Script is loading all files and then going to analysis. could try making a snakemake file such that each read file is loaded, read, and then searched which will be stored in the output, then the script can move on to the next file, freeing up memory.
