@@ -61,3 +61,5 @@ Using **metaCherchant** <https://github.com/ctlab/metacherchant> on single fecal
 Output generated all desired and expected outputs (2020-10-01) so will continue with creating snakemake file to execute across all metagenomes.
 
 Each metagenomic environment will be run separately so to easily compare. Soil was ran with 500 Gb of memory (2020-10-03). <https://https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/subset-soil>
+
+2020-10-04: 500 Gb not enough for the script, 1000 Gb not enough, cannot cluster allocate >2000 Gb of memory.
