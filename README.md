@@ -22,9 +22,7 @@ output: html_document
 
 Using **Kraken2** tool against the nucleotide data base to determine the taxonomic diversity:
 
-```
-
-```
+<https://github.com/catrionelee/ICE_MAG/blob/master/miniKraken2>
 
 ## 2. Metagenomic genome assembly pipeline
 
