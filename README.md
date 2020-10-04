@@ -27,6 +27,7 @@ Using **Kraken2** tool against the nucleotide data base to determine the taxonom
 ## 2. Metagenomic genome assembly pipeline
 
 Using **nf-core/mag** pipeline to assemble MAGs
+
 <https://github.com/catrionelee/ICE_MAG/blob/master/nf-core-mag>
 
 
@@ -57,6 +58,6 @@ Using **metaCherchant** <https://github.com/ctlab/metacherchant> on single fecal
         -c
 ```
 
-Output generated all desired and exprected outputs (2020-10-01) so will continue with creating snakemake file to execute across all metagenomes.
+Output generated all desired and expected outputs (2020-10-01) so will continue with creating snakemake file to execute across all metagenomes.
 
-
+Each metagenomic environment will be run separately so to easily compare. Soil was ran with 500 Gb of memory (2020-10-03). <https://https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/subset-soil>
