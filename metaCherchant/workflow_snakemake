@@ -1,0 +1,26 @@
+import pandas as pd
+
+configfile: 'metacherchant_config.yaml'
+
+SAMPLE = pd.read_csv(config["samples"], sep="\t").set_index("sample", drop=False)
+
+
+rule metacherchant:
+    input:
+        '/home/AAFC-AAC/leecat/catrione_metagenome/soil/{sample}_*{1,2}.fastq.gz',
+        seq='/home/AAFC-AAC/leecat/iceberg.fasta'
+    shell:
+        "./metacherchant.sh"
+        "--tool environment-finder"
+        "--k 31"
+        "--coverage=5"
+        "--reads {read}"
+        "--seq {seq}"
+        "--output subset_soil/output"
+        "--work-dir subset_soil/workDir"
+        "--maxkmers=100000"
+        "--bothdirs=TRUE"
+        "--chunklength=100"
+        "-pf 5"
+        "-m 500G"
+        "-c"
