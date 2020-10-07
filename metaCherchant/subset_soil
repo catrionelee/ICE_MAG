@@ -1,7 +1,11 @@
+# Running on the cluster
+qlogin -pe smp 8 
+
+
+# Parameters script for soil subset
 #!/usr/bin/env bash
 
-# Parameters for soil subset:
-qlogin -pe smp 8 ./metacherchant.sh --tool environment-finder \
+./metacherchant.sh --tool environment-finder \
         --k 31 \
         --coverage=5 \
         --reads /home/AAFC-AAC/leecat/catrione_metagenomics/soil/SRR*{1,2}.fastq.gz \
