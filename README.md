@@ -58,9 +58,14 @@ Using **metaCherchant** <https://github.com/ctlab/metacherchant> on single fecal
         -c
 ```
 
-Output generated all desired and expected outputs (2020-10-01) so will continue with creating snakemake file to execute across all metagenomes.
-# There are 303 putative ICEs. Average number of sequences per putative ICE was 141.627.
+Output generated all desired and expected outputs (2020-10-01) so will continue with creating snakemake file to execute across all metagenomes. There are 303 putative ICEs. Average number of sequences per putative ICE was 141.627.
 
 Each metagenomic environment will be run separately so to easily compare. Soil was ran with 500 Gb of memory (2020-10-03). <https://https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/subset-soil>
 
 2020-10-04: 500 Gb not enough for the script, 1000 Gb not enough, cannot cluster allocate >2000 Gb of memory. Script is loading all files and then going to analysis. could try making a snakemake file such that each read file is loaded, read, and then searched which will be stored in the output, then the script can move on to the next file, freeing up memory. <https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/workflow_snakemake>
+
+
+### A. SRR6512893 putative ICE no. 2
+*Each output folder is the ICEberg db item no.* **Therefore No. 2 is Tn916**
+
+
