@@ -59,7 +59,7 @@ Using **metaCherchant** <https://github.com/ctlab/metacherchant> on single fecal
 ```
 
 Output generated all desired and expected outputs (2020-10-01) so will continue with creating snakemake file to execute across all metagenomes.
-        There are 303 putative ICEs.
+# There are 303 putative ICEs. Average number of sequences per putative ICE was 141.627.
 
 Each metagenomic environment will be run separately so to easily compare. Soil was ran with 500 Gb of memory (2020-10-03). <https://https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/subset-soil>
 
