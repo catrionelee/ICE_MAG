@@ -65,7 +65,7 @@ Each metagenomic environment will be run separately so to easily compare. Soil w
 2020-10-04: 500 Gb not enough for the script, 1000 Gb not enough, cannot cluster allocate >2000 Gb of memory. Script is loading all files and then going to analysis. could try making a snakemake file such that each read file is loaded, read, and then searched which will be stored in the output, then the script can move on to the next file, freeing up memory. <https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/workflow_snakemake>
 
 
-### A. SRR6512893 putative ICE no. 2
+### A. SRR6512893 putative ICEs
 *Each output folder is the ICEberg db item no.* **Therefore No. 2 is Tn916**
 
-
+SRR6512893 is a fecal metagenome. There are **303 ICEs** found with hits to the ICEberg 2.0 database.
