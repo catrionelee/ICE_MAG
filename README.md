@@ -66,6 +66,6 @@ Each metagenomic environment will be run separately so to easily compare. Soil w
 
 
 ### A. SRR6512893 putative ICEs
-*Each output folder is the ICEberg db item no.* **Therefore No. 2 is Tn916**
+*Each output folder is the ICEberg db item no.* **Therefore No. 2 is CTn341**
 
 SRR6512893 is a fecal metagenome. There are **303 ICEs** found with hits to the ICEberg 2.0 database.
