@@ -1,0 +1,12 @@
+import pandas as pd
+
+configfile: '../metacherchant_config.yaml'
+
+READS = ["1" "2"]
+
+rule metacherchant:
+    input:
+        reads="/home/AAFC-AAC/leecat/catrione_metagenomics/soil/SRR{READS}_{1,2}.fastq.gz"
+#        seq="/home/AAFC-AAC/leecat/iceberg.fasta"
+    shell:
+        "../metacherchant.sh --tool environment-finder --k 31 -- coverage=5 --reads {reads} --seq /home/AAFC-AAC/leecat/iceberg.fasta --output subset_soil/output --work-dir subset_soil/worDir --maxkmers=100000 --bothdirs=TRUE --chunklength=100 -pf 5 -m 500G -c"
