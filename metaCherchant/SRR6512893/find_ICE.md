@@ -1,7 +1,8 @@
 # Finding the ICE names from the ICEberg 2.0 database
 
 ### Trial 1 ###
-``` SRR6512893_list_ICE_ref.txt iceberg_name.txt > ICEs_in_reads_A.txt
+```
+SRR6512893_list_ICE_ref.txt iceberg_name.txt > ICEs_in_reads_A.txt
 ```
 Only retrieved **214** out of 303 detected ICEs.
 
