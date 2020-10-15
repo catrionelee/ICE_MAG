@@ -28,3 +28,9 @@ grep -F -x -v -f <(grep -o '[^/]*$' iceberg_name.txt) <(grep -o '[^/]*$' ICEs_in
 0 missing ...
 
 3 ---
+```
+grep -wf SRR6512893_list_ICE_ref.txt -r iceberg_name_list.txt > missing_z.txt
+```
+
+# Rethinking the problem
+Tried sorting each of the files ```SRR6512893_list_ICE_ref.txt``` and ```iceberg_name.txt``` then running trial 1's script. Got same result: 214 matches.
