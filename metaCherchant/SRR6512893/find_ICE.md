@@ -33,3 +33,8 @@ Counted the total number of ICE in the ICEberg 2.0 database. got **552** total I
 ```grep -vf SRR6512893_list_ICE_ref.txt iceberg_name.txt > ICEs_in_reads_n.txt``` 0 "ICE in reads"
 
 ```grep -vf iceberg_name.txt SRR6512893_list_ICE_ref.txt > ICEs_in_reads_o.txt``` 303 "ICE in reads". This looks like its it. But no, its just the entire ```SRR6512893_list_ICE_ref.txt``` again.
+
+It seems like ```grep``` has to be the right tool, I just need to find the right paraceters...
+
+# Back to the missing "ICEs"
+I still can't seem to extract them. Well, there's ~ 1/3 chance that I will randomly pick one that doesn't appear ...
