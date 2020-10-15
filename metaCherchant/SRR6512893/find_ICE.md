@@ -14,7 +14,9 @@ grep -Fw -f SRR6512893_list_ICE_ref.txt iceberg_name.txt
 Better, but only retrieved **243** out of 303 detected ICEs.
 
 
-### Fin mising ref ids ###
+## Fin mising ref ids ##
 ```
 grep -F -x -v -f <(grep -o '[^/]*$' ICEs_in_reads_A.txt) <(grep -o '[^/]*$' iceberg_name.txt) > missing_ref_A.txt
 ```
+**NOPE** that returns 338 "missing" ref IDs
+
