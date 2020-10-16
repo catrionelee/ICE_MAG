@@ -40,3 +40,7 @@ It seems like ```grep``` has to be the right tool, I just need to find the right
 I still can't seem to extract them. Well, there's ~ 1/3 chance that I will randomly pick one that doesn't appear ...
 
 Using the sorted files, found ref IDs **3** and **5** that were not within the ```ICEs_in_reads_A.txt```. Looked them up in the ICEberg database that I used and they are missing... So **what do the folder names in the output actually mean?** It's the same database that I supplied metacherchant with so it should match up, but it doesn't.
+
+
+# Re-running metaCherchant
+I've downlloaded the ICEberg2.0 database again, and will run metacherchant again with same parameters as last time, except with the newly downloaded database ```ICE_seq_all.fas```.
