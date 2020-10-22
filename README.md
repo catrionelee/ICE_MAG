@@ -8,7 +8,7 @@ output: html_document
 # Thesis: Characterizing Metegenomic Resistomes *in silico* for Agricultural and Environmental Microbiomes
 
 
-## Objectives
+# Objectives
 
 1. To detect antimicrobial resistance gene (ARG)-containing mobile genetic elements (MGE) - in particular integrative conjugative elements (ICE) - in important environmental microbiomes downstream of the agricultural sector: the structure, prevalence, and diversity of ICEs will be evaluated. 
 
@@ -18,25 +18,25 @@ output: html_document
 
 
 
-## 1. Distribution of taxa in metegenomes
+# 1. Distribution of taxa in metegenomes
 
 Using **Kraken2** tool against the nucleotide data base to determine the taxonomic diversity:
 
 <https://github.com/catrionelee/ICE_MAG/blob/master/miniKraken2>
 
-## 2. Metagenomic genome assembly pipeline
+# 2. Metagenomic genome assembly pipeline
 
 Using **nf-core/mag** pipeline to assemble MAGs
 
 <https://github.com/catrionelee/ICE_MAG/blob/master/nf-core-mag>
 
 
-## 3. Identifying ICEs and ARGs in MAGs
+# 3. Identifying ICEs and ARGs in MAGs
 
 Using the **CONJscan** module of MacSyFinder to locate ICEs in the MAGs. Could use built in database or ICEberg 2.0.
 
 
-## 4. Identifying ICEs in reads
+# 4. Identifying ICEs in reads
 
 Using **metaCherchant** <https://github.com/ctlab/metacherchant> on single fecal metagenome SRR6512893 parameters againt ICEberg 2.0 database:
 
