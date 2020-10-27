@@ -73,7 +73,7 @@ SRR6512893 is a fecal metagenome. There are **303 ICEs** found with hits to the 
 Coverage was initially set to 5, but increasing to 10 and 20 resulted in:
 
 * Coverage=10: **271** putative ICEs. Lost 32 putative ICEs.
-* Coverage=20: 
+* Coverage=20: **225** putative ICEs.
 
 ### B. Checking the output ICE identity
 Initially thought that each output folder from initial run was indicating the ICEberge db ref number. However, this left 89 putative ICEs unaccounted for within the database. Then thought that the output folders were referencing the entry within the database (ignoring the header compoetely). Generated blast database from the iceberg fasta database `makeblastdb -in iceberg.fasta -dbtype nucl -parse_seqidsmakeblastdb -in iceberg.fasta -dbtype nucl -parse_seqids`, then blasted the sequences from each of the output folders against this: `blastn -db iceberg.fasta -query ./catrione_metagenomics/metacherchant/subset_SRR6512893/output/2/seqs.fasta -out blastn_2_vs_iceberg.txt`
@@ -81,3 +81,11 @@ Initially thought that each output folder from initial run was indicating the IC
 The output 2 looks like it could match the 2nd entry, CTn341; or ref no. 58. I'm confident that the metacherchant algorithm would have been able to distiguish between the 2 and assigned it correctly. 
 
 Looking at the 3rd output, it should be ICE|12|ICEVchBan5. Indeed this result pops up in the blast results but so do many other results so this one is less conclusive.
+
+
+# 5. Identifying ARGs from context
+
+## A. SRR6512893
+There are a total of 4 ARG hits to 3 different putative ICEs from the NCBI db using ABRicate. There was *aadE* (x2), *mef(A)* (x1), and *tet(Q)*, where *mef(A)* and *tet(Q)* were found in the same putative ICE.
+
+**When do we stop calling them putative?**
