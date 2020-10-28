@@ -30,6 +30,34 @@ Using **nf-core/mag** pipeline to assemble MAGs
 
 <https://github.com/catrionelee/ICE_MAG/blob/master/nf-core-mag>
 
+## Choosing an Assembly 
+
+Selecting all assemblies for SRR6512893 (fecal metagenome), the `quast_and_busco_summary.tsv` file was manipulated to show averages of each metric unless otherwise stated. All averages are rounded to nearest integar for simplicity.
+
+| Metric | Megahit | metaSPAdes |
+| --- | --- | --- |
+| %Complete | 44 | 36 |
+| %Missing | 9 | 55 |
+| # contigs (>= 0 bp) | 340 | 307 |
+| # contigs (>= 1000 bp) | 340 | 307 |
+| # contigs (>= 5000 bp) SUM | 12521 | 14488 |
+| # contigs (>= 10000 bp) SUM | 4490 | 5026 |
+| # contigs (>= 25000 bp) SUM | 789 | 741 |
+| # contigs (>= 50000 bp) SUM | 140 | 113 |
+| Total length (>= 5000 bp) | 787877 | 696432 |
+| Total length (>= 10000 bp) | 480925 | 406878 |
+| Total length (>= 25000 bp) | 175414 | 125573 |
+| Total length (>= 50000 bp) | 57029 | 34216 |
+| # contigs | 340 | 307 |
+| Largest contig | 31719 | 28152 |
+| Total length | 1473125 | 1317251 |
+| N50 | 7405 | 7455 |
+| N75 | 4244 | 4073 |
+| L50 | 95 | 86 |
+| L75 | 187 | 170 |
+| # N's per 100 kbp | 0 | 206 |
+
+
 
 # 3. Identifying ICEs and ARGs in MAGs
 
