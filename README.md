@@ -57,6 +57,8 @@ Selecting all assemblies for SRR6512893 (fecal metagenome), the `quast_and_busco
 | L75 | 187 | 170 |
 | # N's per 100 kbp | 0 | 206 |
 
+Based on the table's results and consulting the literature, **Megahit** will be the preffered assembler for our uses. van der Walt et al. 2017 and Vollmers et al. 2017 both agreed that metaSPAdes was better suited for community profiling, but that Megahit was better for determining micro diversity.
+
 
 
 # 3. Identifying ICEs and ARGs in MAGs
