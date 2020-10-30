@@ -14,7 +14,7 @@ rule all:
 
 rule kraken2:
     input:
-        input='/home/AAFC-AAC/leecat/catrione_metagenomics/metacherchant/subset_SRR6512893/output/{sample}/seqs.fasta'
+        expand('/home/AAFC-AAC/leecat/catrione_metagenomics/metacherchant/subset_SRR6512893/output/{sample}/seqs.fasta', sample=SAMPLE.index)
     params:
         thread = 8,
         confidence = 0,
@@ -35,6 +35,5 @@ rule kraken2:
         #"--memory-mapping "
         #"--paired "
         "--use-names "
-        #"--gzip-compressed "
-        "{input.input}"
+        "{input}"
         
