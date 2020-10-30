@@ -14,7 +14,7 @@ rule all:
 
 rule kraken2:
     input:
-        expand('/home/AAFC-AAC/leecat/catrione_metagenomics/metacherchant/subset_SRR6512893/output/{sample}/seqs.fasta', sample=SAMPLE.index)
+        lambda wildcards: SAMPLE.loc[wildcards.sample, 'location']
     params:
         thread = 8,
         confidence = 0,
