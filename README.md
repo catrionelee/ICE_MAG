@@ -119,3 +119,9 @@ Looking at the 3rd output, it should be ICE|12|ICEVchBan5. Indeed this result po
 There are a total of 4 ARG hits to 3 different putative ICEs from the NCBI db using ABRicate. There was *aadE* (x2), *mef(A)* (x1), and *tet(Q)*, where *mef(A)* and *tet(Q)* were found in the same putative ICE.
 
 **When do we stop calling them putative?**
+
+
+# 6. Determining taxonomy from context around ICEs
+
+### SRR6512893
+
