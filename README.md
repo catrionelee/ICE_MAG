@@ -124,4 +124,5 @@ There are a total of 4 ARG hits to 3 different putative ICEs from the NCBI db us
 # 6. Determining taxonomy from context around ICEs
 
 ### SRR6512893
-
+Potential snakemake execution script:
+`snakemake --cluster "qsub" --snakefile kraken.smk`
