@@ -152,3 +152,4 @@ Used metaCherchant again but with ICEberg database against the constructed/pulle
 <https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/ARG%20in%20reads/params_for_ARG_ICE> 
 
 Found 173 ICEs associated with ARGs in SRR6512893.
+Due to using metacherchant twice, the folders from 2nd run are unclear what titles relate to.
