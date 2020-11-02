@@ -124,9 +124,13 @@ abricate
 **When do we stop calling them putative?**
 
 ### SRR9037497
-```abricate --db megares ./output/*/seqs.fasta > all_ICE_ARGs.txt```
-
 Since there were only three total ICE's that contained an ARG in SRR6512893, we will try repeating the results with another fecal sample SRR9037497. Used the parameters in <> with a coverage = 10.
+
+This resulted in 162 putative ICEs.
+
+`abricate --db megares ./output/*/seqs.fasta > ARGs_in_ICE_megares.txt`
+There were no ARGs found within those 162 ICEs from the MEGARes database.
+
 
 ## D. Determining taxonomy from context around ICEs
 
