@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+./metacherchant.sh --tool environment-finder \
+        --k 31 \
+        --coverage=5 \
+        --reads /home/AAFC-AAC/leecat/catrione_metagenomics/metacherchant/ARGs_in_ICEs/SRR6512893/output/*/seqs.fasta \
+        --seq /home/AAFC-AAC/leecat/iceberg.fasta \
+        --output ARG_in_reads/SRR6512893/ICE/output \
+        --work-dir ARG_in_reads/SRR6512893/ICE/workDir \
+        --maxkmers=100000 \
+        --bothdirs=TRUE \
+        --chunklength=100 \
+        -pf 5\
+        -m 500G \
+        -c
