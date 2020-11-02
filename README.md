@@ -66,7 +66,7 @@ Based on the table's results and consulting the literature, **Megahit** will be 
 Using the **CONJscan** module of MacSyFinder to locate ICEs in the MAGs. Could use built in database or ICEberg 2.0.
 
 
-# 4. Identifying ICEs and ARGs in reads
+# 4. Identifying ICEs with ARGs in reads
 
 Using **metaCherchant** <https://github.com/ctlab/metacherchant> on single fecal metagenome SRR6512893 parameters againt ICEberg 2.0 database:
 
@@ -117,10 +117,15 @@ Looking at the 3rd output, it should be ICE|12|ICEVchBan5. Indeed this result po
 
 ### SRR6512893
 There are a total of 4 ARG hits to 3 different putative ICEs from the NCBI db using ABRicate. There was *aadE* (x2), *mef(A)* (x1), and *tet(Q)*, where *mef(A)* and *tet(Q)* were found in the same putative ICE.
+```
+abricate 
+```
 
 **When do we stop calling them putative?**
 
-### Repeating metaCherchant and ABRicate with SRR9037497
+### SRR9037497
+```abricate --db megares ./output/*/seqs.fasta > all_ICE_ARGs.txt```
+
 Since there were only three total ICE's that contained an ARG in SRR6512893, we will try repeating the results with another fecal sample SRR9037497. Used the parameters in <> with a coverage = 10.
 
 ## D. Determining taxonomy from context around ICEs
@@ -128,3 +133,7 @@ Since there were only three total ICE's that contained an ARG in SRR6512893, we 
 ### SRR6512893
 Used following command to submit to biocluster the snakefile <https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/SRR6512893/kraken.smk>: 
 `snakemake --cluster "qsub -V -cwd -pe smp {threads}" --jobs 50 -s kraken.smk --use-conda`
+
+
+# 5.  Finding ARGs associated with ICEs in reads
+Since the ICEs found within reads (metaCherchant w/ ICEberg2.0) were highly fragmented, it was difficult to find complete enough ICEs to detect any ARGs within them. Instead, by first searching for the ARGs in the reads (metaCherchant w/ MEGARes), then using the flanking regions/context to find associated ICEs we should have higher yields.
