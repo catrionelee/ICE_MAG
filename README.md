@@ -141,3 +141,5 @@ Used following command to submit to biocluster the snakefile <https://github.com
 
 # 5.  Finding ARGs associated with ICEs in reads
 Since the ICEs found within reads (metaCherchant w/ ICEberg2.0) were highly fragmented, it was difficult to find complete enough ICEs to detect any ARGs within them. Instead, by first searching for the ARGs in the reads (metaCherchant w/ MEGARes), then using the flanking regions/context to find associated ICEs we should have higher yields.
+
+<https://github.com/catrionelee/ICE_MAG/tree/master/metaCherchant/ARG%20in%20reads>
