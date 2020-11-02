@@ -3,7 +3,7 @@
 ./metacherchant.sh --tool environment-finder \
         --k 31 \
         --coverage=5 \
-        --reads /home/AAFC-AAC/leecat/catrione_metagenomics/metacherchant/ARGs_in_ICEs/SRR6512893/output/*/seqs.fasta \
+        --reads /home/AAFC-AAC/leecat/catrione_metagenomics/metacherchant/ARG_in_reads/SRR6512893/output/*/seqs.fasta \
         --seq /home/AAFC-AAC/leecat/iceberg.fasta \
         --output ARG_in_reads/SRR6512893/ICE/output \
         --work-dir ARG_in_reads/SRR6512893/ICE/workDir \
