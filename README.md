@@ -120,6 +120,8 @@ There are a total of 4 ARG hits to 3 different putative ICEs from the NCBI db us
 
 **When do we stop calling them putative?**
 
+## Repeating metaCherchant and ABRicate with SRR9037497
+Since there were only three total ICE's that contained an ARG in SRR6512893, we will try repeating the results with another fecal sample SRR9037497. Used the parameters in <> with a coverage = 10.
 
 # 6. Determining taxonomy from context around ICEs
 
