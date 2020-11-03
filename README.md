@@ -163,5 +163,6 @@ Found 476 ARGs.
 Used metaCherchant again but with ICEberg database against the constructed/pulle dsequences from previous run with ARGs. This will determine if there are any ARGs surrounded by ICEs based on their context. Used the pollowing prarameters, excet with coverage of 5 because context will be less complete:
 <https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/ARG%20in%20reads/params_for_ARG_ICE> 
 
-Found 173 ICEs associated with ARGs in SRR6512893.
-Due to using metacherchant twice, the folders from 2nd run are unclear what titles relate to.
+Found 173 ICEs associated with ARGs in SRR6512893. The directory names are the same entries to the ICEberg database, like before. The three ICEs detected earlier are contained within this list of 173.
+
+Ran ARBicate with the MEGARes database against the "constructed" ICEs but found 0 ARGs. This seems to indicate that ABRicate is unable to detect ARGs from the seqs.fasta files that metaCherchatn generates. 
