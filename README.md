@@ -116,9 +116,9 @@ Looking at the 3rd output, it should be ICE|12|ICEVchBan5. Indeed this result po
 ## C. Identifying ARGs from context
 
 ### SRR6512893
-There are a total of 4 ARG hits to 3 different putative ICEs from the NCBI db using ABRicate. There was *aadE* (x2), *mef(A)* (x1), and *tet(Q)*, where *mef(A)* and *tet(Q)* were found in the same putative ICE.
+There are a total of 4 ARG hits to 3 different putative ICEs from the NCBI db using ABRicate. There was *aadE* (x2), *mef(A)* (x1), and *tet(Q)*, where *mef(A)* and *tet(Q)* were found in the same putative ICE. The ICEs were "32" CTnBST, "439" ICESag37, and "480" CTnHyB.
 ```
-abricate 
+abricate --db megares catrione_metagenomics/metacherchant/ICE_in_reads/subset_SRR6512893/output/*/seqs.fasta > all
 ```
 
 **When do we stop calling them putative?**
@@ -137,6 +137,18 @@ There were no ARGs found within those 162 ICEs from the MEGARes database.
 ### SRR6512893
 Used following command to submit to biocluster the snakefile <https://github.com/catrionelee/ICE_MAG/blob/master/metaCherchant/SRR6512893/kraken.smk>: 
 `snakemake --cluster "qsub -V -cwd -pe smp {threads}" --jobs 50 -s kraken.smk --use-conda`
+
+Of the 303 total jobs, 268 succeeded while 35 failed.
+For the three ICEs with ARGs:
+
+#### "32" CTnBST, GenBank AY345595
+The original bacterium was *Bacteroides uniformis*. There were hits to the Family Bacteroideae to which this bacterium belongs. The other hits were confidently in the Order Clostridiales, with prominant species being *Clostridium bolteae* and most probably *Clostridioides difficile*.
+
+#### "439" ICESage37, GenBank CP019978
+The original bacterial host for the ICE was *Streptococcus agalactiae* and there were numerous hits to the Streptococcus Genus. The Other prominant hits beloing to the ORder Clostridiales, with *Clostridioides difficile* present but most probably *Roseburia intestinalis*.
+
+#### "480" CTnHyB, GenBank KJ816753
+The original host bacterium was *Bacteroides fragilis* and the only taxonomic assignment was to this bacterium. This indicates that this particular ICE has not switched hosts and has stayed integrated into the chromosome.
 
 
 # 5.  Finding ARGs associated with ICEs in reads
