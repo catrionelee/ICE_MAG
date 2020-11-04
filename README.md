@@ -144,7 +144,7 @@ For the three ICEs with ARGs:
 #### "32" CTnBST, GenBank AY345595
 The original bacterium was *Bacteroides uniformis*. There were hits to the Family Bacteroideae to which this bacterium belongs. The other hits were confidently in the Order Clostridiales, with prominant species being *Clostridium bolteae* and most probably *Clostridioides difficile*.
 
-#### "439" ICESage37, GenBank CP019978
+#### "439" ICESag37, GenBank CP019978
 The original bacterial host for the ICE was *Streptococcus agalactiae* and there were numerous hits to the Streptococcus Genus. The Other prominant hits beloing to the ORder Clostridiales, with *Clostridioides difficile* present but most probably *Roseburia intestinalis*.
 
 #### "480" CTnHyB, GenBank KJ816753
