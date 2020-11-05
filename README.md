@@ -166,3 +166,21 @@ Used metaCherchant again but with ICEberg database against the constructed/pulle
 Found 173 ICEs associated with ARGs in SRR6512893. The directory names are the same entries to the ICEberg database, like before. The three ICEs detected earlier are contained within this list of 173.
 
 Ran ARBicate with the MEGARes database against the "constructed" ICEs but found 0 ARGs. This seems to indicate that ABRicate is unable to detect ARGs from the seqs.fasta files that metaCherchatn generates. 
+
+
+## A. Match putative ICEs to ARGs associated with
+Looking at putative ICE "32", found 2 read ids's: Id48 and Id187. Using `grep -w "Id48" */seqs.fasta` and with Id187, found no matches at all to the ARGs output sequences. This indicates that the Id's are unique to each metaCherchant run and cannot be compared.
+
+Using BLASTn instead:
+```
+blastn -subject ../ICE/output/*/seqs.fasta -query */seqs.fasta -out ../ICE/blastn_ARGs_v_ICEs.txt -outfmt 7
+```
+Too many arguments in the `seqs.fasta` files. Need to narrow down to single ICE.
+
+```
+blastn -subject */seqs.fasta -query ../ICE/output/32/seqs.fasta -out ../ICE/blastn_32_v_ARGs.txt -outfmt 7
+```
+Too many arguments. Can only do 1 agaisnt 1 at a time apparently. Need to make a Snakefile.
+
+
+
