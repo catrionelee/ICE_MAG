@@ -183,4 +183,25 @@ blastn -subject */seqs.fasta -query ../ICE/output/32/seqs.fasta -out ../ICE/blas
 Too many arguments. Can only do 1 agaisnt 1 at a time apparently. Need to make a Snakefile.
 
 
+## B. Confirming ICEs
+According to Stafford et al. 2020 there are 5 essential ICE genes. Found primers and created fasta file with them all inside. Made script to print out each putative ICE's # ids and wc -c (i.e. the length of the sequence).
+```
+#!/usr/bin/env bash
+
+rm largest_ICE_from_read.txt
+touch largest_ICE_from_read.txt
+
+readarray -t array < "list_ICE_w_ARGs.txt"
+
+for i in "${array[@]}"
+do
+      :
+        id=`grep -c "^>" ../output/$i/seqs.fasta`
+        word=`wc -c ../output/$i/seqs.fasta`
+        echo -e "ICE_$i\t$id ids\t$word length" >> largest_ICE_from_read.txt
+done
+```
+Retrieved the ones with 9 or more ids and these happened to coincide with the longest total sequences. These graph.gfa I downloaded, loaded into Bandage and extracted the paths into separate fasta files. Then ran BLASTn: `blastn -subject essential_ICE_primers.fasta -query bandage_paths/* -out paths_v_primers_blast.txt -outfmt 7` but encountered error: `Error: Too many positional arguments (1), the offending value: bandage_paths/140_path_2.fasta`.
+
+
 
