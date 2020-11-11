@@ -63,8 +63,12 @@ Based on the table's results and consulting the literature, **Megahit** will be 
 
 # 3. Identifying ICEs and ARGs in MAGs
 
-Using the **CONJscan** module of MacSyFinder to locate ICEs in the MAGs. Could use built in database or ICEberg 2.0.
+```
+abricate --db megares --fofn megahit_mags_80cov.txt > megahit_mag_args.txt
+```
 
+```
+blastn -db icegerg.
 
 # 4. Identifying ICEs with ARGs in reads
 
