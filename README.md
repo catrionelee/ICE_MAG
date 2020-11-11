@@ -68,7 +68,8 @@ abricate --db megares --fofn megahit_mags_80cov.txt > megahit_mag_args.txt
 ```
 
 ```
-blastn -db icegerg.
+blastn -db icegerg.fasta -query
+```
 
 # 4. Identifying ICEs with ARGs in reads
 
