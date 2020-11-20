@@ -71,6 +71,11 @@ abricate --db megares --fofn megahit_mags_80cov.txt > megahit_mag_args.txt
 blastn -db icegerg.fasta -query
 ```
 
+```
+CAT bin -b ../results/GenomeBinning/MetaBAT2/SPAdes-SRR6512893.149.fa -d /isilon/lethbridge-rdc/users/ortegapoloro/cat_db/CAT_prepare_20200618/2020-06-18_CAT_database/ -t /isilon/lethbridge-rdc/users/ortegapoloro/cat_db/CAT_prepare_20200618/2020-06-18_taxonomy/ -n 8 --top 6 -o cat_spades_149 --I_know_what_Im_doing
+```
+
+
 # 4. Identifying ICEs with ARGs in reads
 
 Using **metaCherchant** <https://github.com/ctlab/metacherchant> on single fecal metagenome SRR6512893 parameters againt ICEberg 2.0 database:
