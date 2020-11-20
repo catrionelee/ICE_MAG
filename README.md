@@ -63,16 +63,36 @@ Based on the table's results and consulting the literature, **Megahit** will be 
 
 # 3. Identifying ICEs and ARGs in MAGs
 
+## SRR6512893 subset
+### ARGs
+Used ABRicate to locate ARGs within all bins of SRR6512893. First, selected bins with >80% completeness from QUAST and BUSCO report. 
 ```
 abricate --db megares --fofn megahit_mags_80cov.txt > megahit_mag_args.txt
 ```
+This yielded Megahit_29 having 1 macrolideR and no metaSPAdes bins.
 
+Second, increased selection field to be >50% completeness (not including >80%). This resulted in: Megahit_72 (tetR), Megahit_30 (tetR, sulfonimide), metaSPAdes_74 (tetT, sulfonimide), and metaSPAdes_149 (32 x ARG).
+
+#### Prokka
+Annoted with Prokka to get descriptions of the bins.
+
+#### Confirm metaSPAdes_149
+Used Geneious to visualize prokka annotations and compare to ARG coordinates from ABRicate. All excpet 2 ARGs were confirmed with prokka annotations. The remaining 2 aligned with unclassified CDS's.
+
+
+### ICEs
 ```
 blastn -db icegerg.fasta -query
 ```
 
+### Taxonomy
+Using CAT, classified identified bins.
 ```
 CAT bin -b ../results/GenomeBinning/MetaBAT2/SPAdes-SRR6512893.149.fa -d /isilon/lethbridge-rdc/users/ortegapoloro/cat_db/CAT_prepare_20200618/2020-06-18_CAT_database/ -t /isilon/lethbridge-rdc/users/ortegapoloro/cat_db/CAT_prepare_20200618/2020-06-18_taxonomy/ -n 8 --top 6 -o cat_spades_149 --I_know_what_Im_doing
+
+CAT add_names -i cat_spades_149.ORF2LCA.txt -o cat_spades_149.ORF2LCA.names.txt -t /isilon/lethbridge-rdc/users/ortegapoloro/cat_db/CAT_prepare_20200618/2020-06-18_taxonomy/
+
+CAT add_names -i cat_spades_149.bin2taxonomy.txt -o cat_spades_149.bin2taxonomy.names.txt -t /isilon/lethbridge-rdc/users/ortegapoloro/cat_db/CAT_prepare_20200618/2020-06-18_taxonomy/
 ```
 
 
