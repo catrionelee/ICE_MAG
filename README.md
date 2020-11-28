@@ -233,5 +233,12 @@ done
 ```
 Retrieved the ones with 9 or more ids and these happened to coincide with the longest total sequences. These graph.gfa I downloaded, loaded into Bandage and extracted the paths into separate fasta files. Then ran BLASTn: `blastn -subject essential_ICE_primers.fasta -query bandage_paths/* -out paths_v_primers_blast.txt -outfmt 7` but encountered error: `Error: Too many positional arguments (1), the offending value: bandage_paths/140_path_2.fasta`.
 
+## C. Detecting Plasmids associated with ARGs
+Since 63.7% of the ARGs were unassociated with ICEs, perhaps they are associated with plasmids?
 
+Ran ABRicate with the PlasmidFinder databse:
+```
+abricate --db plasmidfinder --fofn arg_location.txt > plasmidfinder_mag_args.txt
+```
+And found 0 matches from the context.
 
