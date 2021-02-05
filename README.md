@@ -7,6 +7,7 @@ output: html_document
 
 # Thesis: Characterizing Metegenomic Resistomes *in silico* for Agricultural and Environmental Microbiomes
 
+<!-- toc -->
 - [Objectives](#heading)
 - [1. Distribution of Taxa in Metagenomes](#objectives)
 - [2. Metagenomic genome assembly pipeline](#metagenomic-assembly)
@@ -14,6 +15,7 @@ output: html_document
 - [4. Identifying ICEs with ARGs in reads](#read-id)
 - [5.  Finding ARGs associated with ICEs in reads](#read-ice-arg)
 - [6. Expanding to All Sample Assemblies](#all-asemblies)
+<!-- tocstop -->
 
 
 # Objectives
