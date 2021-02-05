@@ -8,13 +8,15 @@ output: html_document
 # Thesis: Characterizing Metegenomic Resistomes *in silico* for Agricultural and Environmental Microbiomes
 
 <!-- toc -->
-- [Objectives](#heading)
-- [1. Distribution of Taxa in Metagenomes](#objectives)
-- [2. Metagenomic genome assembly pipeline](#metagenomic-assembly)
-- [3. Identifying ICEs and ARGs in MAGs](#mag-id)
-- [4. Identifying ICEs with ARGs in reads](#read-id)
-- [5.  Finding ARGs associated with ICEs in reads](#read-ice-arg)
-- [6. Expanding to All Sample Assemblies](#all-asemblies)
+- [Objectives](#objectives)
+- [1. Distribution of taxa in metegenomes](#1-distribution-of-taxa-in-metegenomes)
+- [2. Metagenomic genome assembly pipeline](#2-metagenomic-genome-assembly-pipeline)
+- [3. Identifying ICEs and ARGs in MAGs](#3-identifying-ices-and-args-in-mags)
+- [4. Identifying ICEs with ARGs in reads](#4-identifying-ices-with-args-in-reads)
+- [5.  Finding ARGs associated with ICEs in reads](#5--finding-args-associated-with-ices-in-reads)
+- [6. Expanding to All Sample Assemblies](#6-expanding-to-all-sample-assemblies)
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 <!-- tocstop -->
 
 
