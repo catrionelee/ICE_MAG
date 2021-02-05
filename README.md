@@ -1,10 +1,3 @@
----
-title: 'Honour''s Thesis: Characterizing Metagenomic Resistomes Documentation'
-author: "Catrione Lee"
-date: "September 30, 2020"
-output: html_document
----
-
 # Thesis: Characterizing Metegenomic Resistomes *in silico* for Agricultural and Environmental Microbiomes
 
 <!-- toc -->
@@ -257,6 +250,9 @@ And found 0 matches from the context.
 
 
 # 6. Expanding to All Sample Assemblies
-2021-02-05
+This work is now post-thesis defense.
+
+### Braintorming
+- select suitable assemblies for analysis, BUSCO and QUAST: 
 
 ## Detect ARG and plasmid-associated ARGs 
