@@ -7,6 +7,14 @@ output: html_document
 
 # Thesis: Characterizing Metegenomic Resistomes *in silico* for Agricultural and Environmental Microbiomes
 
+- [Objectives](#heading)
+- [1. Distribution of Taxa in Metagenomes](#heading)
+- [2. Metagenomic genome assembly pipeline](#heading)
+- [3. Identifying ICEs and ARGs in MAGs](#heading)
+- [4. Identifying ICEs with ARGs in reads](#heading)
+- [5.  Finding ARGs associated with ICEs in reads](#heading)
+- [6. Expanding to All Sample Assemblies](#heading)
+
 
 # Objectives
 
@@ -242,3 +250,9 @@ abricate --db plasmidfinder --fofn arg_location.txt > plasmidfinder_mag_args.txt
 ```
 And found 0 matches from the context.
 
+
+
+# 6. Expanding to All Sample Assemblies
+2021-02-05
+
+## Detect ARG and plasmid-associated ARGs 
