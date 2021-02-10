@@ -8,6 +8,7 @@
 - [4. Identifying ICEs with ARGs in reads](#4-identifying-ices-with-args-in-reads)
 - [5.  Finding ARGs associated with ICEs in reads](#5--finding-args-associated-with-ices-in-reads)
 - [6. Expanding to All Sample Assemblies](#6-expanding-to-all-sample-assemblies)
+
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 <!-- tocstop -->
